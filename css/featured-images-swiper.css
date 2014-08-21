@@ -1,0 +1,76 @@
+@charset "utf-8";
+/*
+ Plugin Name: Featured Images Swiper
+ featured-images-swiper.css
+*/
+
+.featured-images-swiper {
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.featured-images-swiper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.featured-images-swiper .swiper-slide {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 2px;
+  overflow: hidden;
+}
+
+.featured-images-swiper .swiper-slide a {
+  display: block;
+  overflow: hidden;
+}
+
+.featured-images-swiper .swiper-slide .thumbnail {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.featured-images-swiper .thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featured-images-swiper .swiper-slide .caption {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
+  width: 150px;
+  height: 150px;
+  padding: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.featured-images-swiper .swiper-slide .caption:before {
+  content: '';
+  display: inline-block;
+  height: 150px;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.featured-images-swiper .swiper-slide .caption p {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
