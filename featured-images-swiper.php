@@ -57,6 +57,7 @@ class FeaturedImagesSwiper {
 		$output = '';
 		$args = array( 'post_type'		=> 'post',
 					   'posts_per_page'	=> $atts['number'],
+					    'orderby'		=> 'rand',
 					   'meta_key'		=> '_thumbnail_id' );
 		$thumbnails = get_posts( $args );
 		foreach ( $thumbnails as $thumbnail ) {
